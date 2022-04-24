@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            UPDATE TEST
+        </title>
+
+        <script type="text/javascript">
+            function testing(){
+                let a = document.getElementById('inputA').value;
+                let b = document.getElementById('inputB').value;
+                document.getElementById("valueA").innerHTML = a;
+                document.getElementById("valueB").innerHTML = b;
+            }
+
+            function button(){
+
+            }
+            
+        </script>
+
+        
+    </head>
+
+    <body>
+        <h1>
+            UPDATE TEST PAGE
+        </h1>
+
+        <!-- 네이비게이션 바 -->
+        <!-- <nav> -->
+        <!-- 클릭을 통한 페이지 이동 (a) -->
+        <!-- link는 href -->
+        <h2>
+            변경하고자 하는 데이터와 그 값을 입력해주세요.
+        </h2>
+
+        <label for="inputA">A</label>
+        <input id="inputA" value="테이블 정보" onkeyup="testing">
+        
+        <br>
+        
+        <label for="inputB">B</label>
+        <input id="inputB" value="데이터 정보" onkeyup="testing">
+
+        <br>
+        
+        <button onclick="button()">실행</button>
+
+        <!-- </nav> -->
+        <hr/>
+        <a href="./test.html">돌아가기</a>
+    </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            DELETE TEST
+        </title>
+
+        <script type="text/javascript">
+            function testing(){
+                let a = document.getElementById('inputA').value;
+                let b = document.getElementById('inputB').value;
+                document.getElementById("valueA").innerHTML = a;
+                document.getElementById("valueB").innerHTML = b;
+            }
+
+            function button(){
+
+            }
+            
+        </script>
+
+
+    </head>
+
+    <body>
+        <h1>
+            DELETE TEST PAGE
+        </h1>
+
+        <!-- 네이비게이션 바 -->
+        <!-- <nav> -->
+        <!-- 클릭을 통한 페이지 이동 (a) -->
+        <!-- link는 href -->
+        <h2>
+            삭제하고자 하는 데이터와 그 조건을 입력해주세요.
+        </h2>
+        <!-- </nav> -->
+
+        <label for="inputA">A</label>
+        <input id="inputA" value="테이블 정보" onkeyup="testing">
+        
+        <br>
+        
+        <label for="inputB">B</label>
+        <input id="inputB" value="데이터 정보" onkeyup="testing">
+
+        <br>
+        
+        <button onclick="button()">실행</button>
+
+
+        <hr/>
+        <a href="./test.html">돌아가기</a>
+    </body>
+</html>
