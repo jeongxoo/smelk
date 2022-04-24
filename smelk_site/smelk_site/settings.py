@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 import os
+from . import server_setting as ss
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -20,7 +21,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-2$=$g5+qh=it-v!r$l+f93%6!$qw3s-1qs%*%xg+_bbb-%!h68'
+SECRET_KEY = ss.SECRET_KEY 
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -76,12 +78,7 @@ WSGI_APPLICATION = 'smelk_site.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
+DATABASES = ss.DATABASES
 
 
 # Password validation
